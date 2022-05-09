@@ -40,9 +40,6 @@ h1{
     top: 140px;
 
 }
-.email:focus{
-    background-color: aliceblue;
-}
 .senha{
     position: absolute;
     top: 200px;
