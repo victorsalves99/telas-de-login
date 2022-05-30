@@ -5,105 +5,83 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Chakra Petch', sem serifa;;
-    color: white;
+
 }
 body{
-    background-image: url(imagens/fundo.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image:url(imagens/fundo.jpg);
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    
 }
-#conteiner{
-    position: relative;
+.principal{
+    position:absolute;
     top: 50%;
     left: 50%;
+    background-color: rgba(0, 0, 0, 0.726);
     transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.537);
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
+    padding: 40px;
+    color: white;
+    border-radius: 40px;
+    
 
 }
 h1{
-    position: absolute;
-    top: 45px;
-    
-}
-.email{
-    position: absolute;
-    top: 140px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
 
 }
-.senha{
-    position: absolute;
-    top: 200px;
-}
-.links{
-    position: absolute;
-    display: flex;
-    top: 260px;
-    flex-direction: row;
-    align-content:flex-start;
-    
-
-}
-
-button{
-    position: absolute;
-    top: 320px;
-    width: 280px;
+.perg input{
+    position: relative;
+    width: 100%;
+    font-weight: bold;
     padding: 10px;
-    border-radius: 50px;
-    background-image: linear-gradient(to right,green, lightgreen);
-    font-size: 1.3em;
-}
-button:hover{
-    background-image: linear-gradient(to right,lightgreen,green);
-}
-#email{
-    padding: 10px;
-    width: 300px;
-    border: none;
     background-color: transparent;
-    border-bottom: 3px solid  green;
-    border-left: 3px solid green ;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid green;
     border-radius: 50px;
 
-}
-#senha{
-    padding: 10px;
-    width: 300px;
-    border: none;
-    background-color: transparent;
-    border-bottom: 3px solid  green;
-    border-left: 3px solid green;
-    border-radius: 50px;
+    margin-bottom: 20px;
 
 }
 label{
     position: absolute;
-    left: 20px;
-    top: 8px;
+    transform:translate(10px,10px)
 }
-#lembrar{
-    position:absolute ;
-    top: 20px;
-    left: -150px;
+input:active + label{
+    transform: translate(-10px,-10px);
+    transition: .2s ease-in-out;
 }
-p{
-    position:absolute ;
-    top: 17px;
-    left: -130px;
+
+.links{
+    margin-top: 20px;
+    margin-bottom: 30px;
+
 }
 a{
-    position:absolute ;
-    top: 20px;
-    left: 10px;
-    width: 150px;
+    margin-left: 15px;
+    color: white;
+}
+.butao{
+    text-align: center;
+
+}
+button{
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: linear-gradient(to left,green ,lightgreen);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+}
+button:hover{
+    background-image: linear-gradient(to left,lightgreen,green);
+    transition: ease-in-out 4s;
+
 }

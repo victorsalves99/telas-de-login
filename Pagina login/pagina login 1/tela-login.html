@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="conteiner">
+    <div class="principal">
         <h1>Tela de Login</h1>
-        <div class="email">
-            <label class="primeiro">E-mail</label>
-            <input type="email"id="email" required>
+        <div class="perg">
+            <label for="email" class="primeiro">E-mail</label>
+            <input type="email"id="email" required placeholder="">
         </div>
-        <div class="senha">
-            <label class="segundo">Senha</label>
+        <div class="perg">
+            <label  for="senha" class="segundo">Senha</label>
             <input type="password" id="senha">
         </div>
         <div class="links">
-            <input type="checkbox" name="" id="lembrar">
-            <p>Lembrar Senha</p>
+            <input type="checkbox" name="" id="lembrar"> Lembrar Senha
             <a href="#" target="_blank">Esqueceu a Senha</a>
         </div>
-        <button type="submit">Enviar</button>
+        <div class ="butao">
+            <button type="submit">Enviar</button>
+        </div>
     </div>
 </body>
 </html>
