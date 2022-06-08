@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="principal">
-        <h1>Tela de Login</h1>
-        <div class="perg">
-            <label for="email" class="primeiro">E-mail</label>
-            <input type="email"id="email" required placeholder="">
+    <form action="formulario.py">
+        <div class="principal">
+            <h1>Tela de Login</h1>
+            <div class="perg">
+                <label for="email" class="primeiro">E-mail</label>
+                <input type="email"id="email" required placeholder="" ">
+            </div>
+            <div class="perg">
+                <label  for="senha" class="segundo">Senha</label>
+                <input type="password" id="senha">
+            </div>
+            <div class="links">
+                <input type="checkbox" name="" id="lembrar"> Lembrar Senha
+                <a href="#" target="_blank">Esqueceu a Senha</a>
+            </div>
+            <div class ="butao">
+                <button type="submit">Enviar</button>
+            </div>
         </div>
-        <div class="perg">
-            <label  for="senha" class="segundo">Senha</label>
-            <input type="password" id="senha">
-        </div>
-        <div class="links">
-            <input type="checkbox" name="" id="lembrar"> Lembrar Senha
-            <a href="#" target="_blank">Esqueceu a Senha</a>
-        </div>
-        <div class ="butao">
-            <button type="submit">Enviar</button>
-        </div>
-    </div>
+    </form>
 </body>
 </html>

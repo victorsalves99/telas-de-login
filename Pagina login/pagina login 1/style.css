@@ -78,10 +78,11 @@ button{
     border-radius: 30px;
     border: none;
     outline: none;
+    transition: 1s;
 
 }
 button:hover{
     background-image: linear-gradient(to left,lightgreen,green);
-    transition: ease-in-out 4s;
+    transition: 1s;
 
 }
